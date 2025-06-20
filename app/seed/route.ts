@@ -104,8 +104,8 @@ async function seedRevenue() {
 
 export async function GET() {
   try {
-    // await seedUsers();
-    // await seedCustomers();
+    await seedUsers();
+    await seedCustomers();
     await seedInvoices();
     await seedRevenue();
 
